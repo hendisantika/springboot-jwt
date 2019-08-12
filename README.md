@@ -34,5 +34,14 @@
       "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuYXJ1dG8iLCJleHAiOjE1NjU2MzMyNzQsImlhdCI6MTU2NTYxNTI3NH0.NGRlS0i3VB7GU4_hv9BHHb1wHliqM3t5APrAo7I8mO4DrREqIbIasfgNtF9pzNbwxNHe9L4eLbYBD0ox31swsA"
     }
     ```
+6. Request with JWT
+    Request:
+    ```
+    curl -H 'Accept: application/json' -H "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuYXJ1dG8iLCJleHAiOjE1NjU2MzQ5MDUsImlhdCI6MTU2NTYxNjkwNX0.hdIIMQKWP0J4en3vYwWtQbX63KjKdHyzp_qonpYtMlE1Ph53-VDB3P8EEksJufq_zYB63Npe23RezU-RXhEMYg" http://localhost:8080/hello | jq .
+    ```
     
-    
+    Response:
+    ```
+    Hello World
+    ```     
+  
